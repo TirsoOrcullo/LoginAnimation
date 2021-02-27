@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at center center, transparent,rgb(255,255,255)),linear-gradient(309deg, rgba(90, 90, 90,0.05) 0%, rgba(90, 90, 90,0.05) 50%,rgba(206, 206, 206,0.05) 50%, rgba(206, 206, 206,0.05) 100%),linear-gradient(39deg, rgba(13, 13, 13,0.05) 0%, rgba(13, 13, 13,0.05) 50%,rgba(189, 189, 189,0.05) 50%, rgba(189, 189, 189,0.05) 100%),linear-gradient(144deg, rgba(249, 249, 249,0.05) 0%, rgba(249, 249, 249,0.05) 50%,rgba(111, 111, 111,0.05) 50%, rgba(111, 111, 111,0.05) 100%),linear-gradient(166deg, rgba(231, 231, 231,0.05) 0%, rgba(231, 231, 231,0.05) 50%,rgba(220, 220, 220,0.05) 50%, rgba(220, 220, 220,0.05) 100%),linear-gradient(212deg, rgba(80, 80, 80,0.05) 0%, rgba(80, 80, 80,0.05) 50%,rgba(243, 243, 243,0.05) 50%, rgba(243, 243, 243,0.05) 100%),radial-gradient(circle at center center, hsl(107,19%,100%),hsl(107,19%,100%));
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #000000;
+}
+
+/* Photo */
+.photo-container {
+    height: 80vh;
+    width: 50%;
+}
+
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Accounts */
+.accounts {
+    background: #fff;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.accounts input,
+.accounts label,
+.accounts .submitsignIn,
+.accounts .submitsignUp {
+    font-size: 1.2rem;
+}
+
+.accounts input {
+    margin-bottom: 15px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.accounts .submitsignIn, 
+.accounts .submitsignUp {
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 0 10px 0;
+}
+
+.signUpbut,
+.signInbut {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.submitsignIn:hover,
+.submitsignUp:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.signIn {
+    width: 90%;
+    display: flex;
+    transition: opacity 0.5s ease;
+    flex-direction: column;
+}
+
+.signUp {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    transform: translateX(20%);
+    transition: transform 0.8s ease-in;
+}
+
+.active-account {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0%);
+}
+
+.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+@media (max-width: 992px) and (min-width: 767px)  {
+
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+    .main-container {
+        height: 90vh;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .photo-container {
+        height: 50%;
+        width: 100%;
+    }
+
+    .photo-container img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .accounts {
+        width: 100%;
+        height: 50%;
+    }
+
+    .accounts input,
+    .accounts label,
+    .accounts .submitsignIn,
+    .accounts .submitsignUp {
+        font-size: 0.9rem;
+        width: 70%;
+    }
+
+    .accounts input {
+        margin-bottom: 10px;
+    }
+
+    .signIn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signUp {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transform: translateY(10px);
+        transition: transform 0.5s ease-in;
+        justify-content: center;
+    }
+
+    .active-account {
+        transform: translateY(0px);
+    }
+
+}
+
+
+@media (max-width: 578px) {
+    .main-container {
+        height: 90vh;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .photo-container {
+        height: 50%;
+        width: 100%;
+    }
+
+    .photo-container img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .accounts {
+        width: 100%;
+        height: 50%;
+    }
+
+    .accounts input,
+    .accounts label,
+    .accounts button {
+        font-size: 0.9rem;
+        width: 70%;
+    }
+
+    .accounts input {
+        margin-bottom: 10px;
+    }
+
+    .signIn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signUp {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transform: translateY(10px);
+        transition: transform 0.5s ease-in;
+        justify-content: center;
+    }
+
+    .active-account {
+        transform: translateY(0px);
+    }
+
+}
