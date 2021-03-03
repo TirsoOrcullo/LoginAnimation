@@ -52,7 +52,6 @@
     justify-content: center;
 }
 
-.accounts input,
 .accounts label,
 .accounts .submitsignIn,
 .accounts .submitsignUp {
@@ -60,10 +59,9 @@
 }
 
 .accounts input {
-    margin-bottom: 15px;
     padding: 10px;
+    border: none;
     outline: none;
-    border-radius: 5px;
     color: #000000;
 }
 
@@ -94,9 +92,104 @@
 .signIn {
     width: 90%;
     display: flex;
-    transition: opacity 0.5s ease;
     flex-direction: column;
+    transition: opacity 0.5s ease;
 }
+
+.username-field input,
+.password-field input,
+.usernameUp-field input,
+.passwordUp-field input,
+.conpasswordUp-field input {
+    height: 50px;
+    padding: 25px 0 0 0;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.username-field,
+.password-field,
+.usernameUp-field,
+.passwordUp-field,
+.conpasswordUp-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.lab-username,
+.lab-password, 
+.lab-usernameUp,
+.lab-passwordUp,
+.lab-conpasswordUp {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.lab-username::after,
+.lab-password::after,
+.lab-usernameUp::after,
+.lab-passwordUp::after,
+.lab-conpasswordUp::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid rgb(4, 6, 104);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.user-label,
+.password-label,
+.usernameUp-label,
+.passwordUp-label,
+.conpasswordUp-label {
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+.username-field input:focus + .lab-username .user-label,
+.username-field input:valid + .lab-username .user-label,
+.password-field input:focus + .lab-password .password-label,
+.password-field input:valid + .lab-password .password-label,
+.usernameUp-field input:focus + .lab-usernameUp .usernameUp-label,
+.usernameUp-field input:valid + .lab-usernameUp .usernameUp-label,
+.passwordUp-field input:focus + .lab-passwordUp .passwordUp-label,
+.passwordUp-field input:valid + .lab-passwordUp .passwordUp-label,
+.conpasswordUp-field input:focus + .lab-conpasswordUp .conpasswordUp-label,
+.conpasswordUp-field input:valid + .lab-conpasswordUp .conpasswordUp-label {
+    transform: translateY(-150%);
+    font-size: 1rem;
+    color: rgb(4, 6, 104);
+}
+
+.username-field input:focus + .lab-username::after,
+.username-field input:valid + .lab-username::after,
+.password-field input:focus + .lab-password::after,
+.password-field input:valid + .lab-password::after,
+.usernameUp-field input:focus + .lab-usernameUp::after,
+.usernameUp-field input:valid + .lab-usernameUp::after,
+.passwordUp-field input:focus + .lab-passwordUp::after,
+.passwordUp-field input:valid + .lab-passwordUp::after,
+.conpasswordUp-field input:focus + .lab-conpasswordUp::after,
+.conpasswordUp-field input:valid + .lab-conpasswordUp::after {
+    transform: translateX(0%);
+}
+
 
 .signUp {
     position: absolute;
@@ -150,11 +243,28 @@
     .accounts .submitsignUp {
         font-size: 0.9rem;
         width: 70%;
+        overflow: hidden;
     }
 
     .accounts input {
         margin-bottom: 10px;
     }
+
+    .username-field,
+    .password-field,
+    .usernameUp-field,
+    .passwordUp-field,
+    .conpasswordUp-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
 
     .signIn {
         width: 100%;
@@ -204,14 +314,32 @@
 
     .accounts input,
     .accounts label,
-    .accounts button {
+    .accounts .submitsignIn,
+    .accounts .submitsignUp {
         font-size: 0.9rem;
         width: 70%;
+        overflow: hidden;
     }
 
     .accounts input {
         margin-bottom: 10px;
     }
+
+    .username-field,
+    .password-field,
+    .usernameUp-field,
+    .passwordUp-field,
+    .conpasswordUp-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
 
     .signIn {
         width: 100%;

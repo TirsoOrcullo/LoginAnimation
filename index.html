@@ -18,21 +18,47 @@
             </div>
             <div class="accounts">
                 <div class="signIn active-account">
-                    <label for="">Username: </label>
-                    <input id="userIn" class="usernameIn" type="text" placeholder="Username" required>
-                    <label for="">Password: </label>
-                    <input id="passIn" class="passwordIn" type="password" placeholder="*********" required>
+                    <div class="username-field">
+                        <input id="userIn" class="usernameIn" type="text" name="user" required>
+                        <label for="user" class="lab-username">
+                            <span class="user-label">Username</span>
+                        </label>
+                    </div>
+
+                    <div class="password-field">
+                        <input id="passIn" class="passwordIn" type="password" name="pass" required>
+                        <label for="pass" class="lab-password">
+                            <span class="password-label">Password</span> 
+                        </label>
+                    </div>
+
                     <button id="subsignIn" class="submitsignIn">Submit</button>
                     <button class="signUpbut">Don't have an account? Sign Up</button>
                 </div>
 
                 <div class="signUp inactive"> 
-                    <label for="">Username: </label>
-                    <input class="usernameUp" type="text" placeholder="Username" required>
-                    <label for="">Password: </label>
-                    <input class="passwordUp" type="password" placeholder="*********">
-                    <label for="">Confirm Password: </label>
-                    <input class="conpasswordUp" type="password" placeholder="*********">
+
+                    <div class="usernameUp-field">
+                        <input class="usernameUp" type="text" required>
+                        <label class="lab-usernameUp">
+                            <span class="usernameUp-label">Username</span> 
+                         </label>
+                    </div>
+
+                    <div class="passwordUp-field">
+                        <input class="passwordUp" type="password" required>
+                        <label class="lab-passwordUp" for="">
+                           <span class="passwordUp-label">Password</span> 
+                        </label>
+                    </div>
+
+                    <div class="conpasswordUp-field">
+                        <input class="conpasswordUp" type="password" required>
+                        <label class="lab-conpasswordUp" for="">
+                            <span class="conpasswordUp-label">Confirm Password</span> 
+                        </label>
+                   
+                    </div>
                     <button class="submitsignUp">Sign Up</button>
                     <button class="signInbut">I already have an account. Sign In</button>
                 </div>
