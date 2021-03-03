@@ -196,8 +196,8 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    transform: translateX(20%);
-    transition: transform 0.8s ease-in;
+    transform: translateX(5%);
+    transition: transform 0.5s ease-in;
 }
 
 .active-account {
