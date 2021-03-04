@@ -90,11 +90,10 @@
 }
 
 .signIn {
-    width: 90%;
-    min-height: 65vh;
+    flex: 1;
+    width: 25%;   
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
     flex-direction: column;
     transition: opacity 0.5s ease;
 }
@@ -195,13 +194,10 @@
 
 
 .signUp {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    min-height: 65vh;
+    width: 25%;
     transform: translateX(5%);
     transition: transform 0.5s ease-in;
 }
@@ -248,7 +244,7 @@
     .accounts .submitsignIn,
     .accounts .submitsignUp {
         font-size: 0.9rem;
-        width: 70%;
+        width: 50%;
         overflow: hidden;
     }
 
