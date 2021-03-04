@@ -91,8 +91,10 @@
 
 .signIn {
     width: 90%;
-    position: fixed;
+    min-height: 65vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     transition: opacity 0.5s ease;
 }
@@ -193,10 +195,13 @@
 
 
 .signUp {
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
+    min-height: 65vh;
     transform: translateX(5%);
     transition: transform 0.5s ease-in;
 }
