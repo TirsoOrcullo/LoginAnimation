@@ -91,6 +91,7 @@
 
 .signIn {
     width: 90%;
+    position: fixed;
     display: flex;
     flex-direction: column;
     transition: opacity 0.5s ease;
@@ -192,7 +193,7 @@
 
 
 .signUp {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     width: 90%;
