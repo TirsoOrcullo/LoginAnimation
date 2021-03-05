@@ -55,7 +55,7 @@
 .accounts label,
 .accounts .submitsignIn,
 .accounts .submitsignUp {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .accounts input {
@@ -104,9 +104,9 @@
 .passwordUp-field input,
 .conpasswordUp-field input {
     height: 50px;
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .username-field,
@@ -120,7 +120,7 @@
     height: 50px;
     width: 100%;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 
@@ -175,7 +175,7 @@
 .conpasswordUp-field input:focus + .lab-conpasswordUp .conpasswordUp-label,
 .conpasswordUp-field input:valid + .lab-conpasswordUp .conpasswordUp-label {
     transform: translateY(-150%);
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: rgb(4, 6, 104);
 }
 
